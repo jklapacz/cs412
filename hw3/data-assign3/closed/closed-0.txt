@@ -1,4 +1,4 @@
-====== Frequent Patterns ======
+======= Closed Patterns =======
 Minimum support = 20.0
 SUPPORT | FREQUENCY | RULE
 1288	0.128	[data]
@@ -184,7 +184,6 @@ SUPPORT | FREQUENCY | RULE
 48	0.005	[programming]
 48	0.005	[cube]
 48	0.005	[rule, data, ]
-48	0.005	[series, data, ]
 48	0.005	[series, time, data, ]
 47	0.005	[framework]
 47	0.005	[connectivity]
@@ -385,7 +384,6 @@ SUPPORT | FREQUENCY | RULE
 26	0.003	[relative]
 26	0.003	[region]
 26	0.003	[core]
-26	0.003	[series, mining, ]
 26	0.003	[fast, mining, ]
 26	0.003	[random, field, ]
 26	0.003	[spatial, data, ]
@@ -418,7 +416,6 @@ SUPPORT | FREQUENCY | RULE
 25	0.002	[directed, graph, ]
 25	0.002	[using, pattern, ]
 25	0.002	[space, algorithm, ]
-25	0.002	[series, pattern, ]
 25	0.002	[closed, frequent, ]
 25	0.002	[series, time, pattern, ]
 25	0.002	[application, mining, data, ]
@@ -499,7 +496,6 @@ SUPPORT | FREQUENCY | RULE
 22	0.002	[time, efficient, ]
 22	0.002	[dimensional, algorithm, ]
 22	0.002	[duplicate, detection, ]
-22	0.002	[series, similarity, ]
 22	0.002	[randomized, algorithm, ]
 22	0.002	[series, time, based, ]
 22	0.002	[series, time, similarity, ]
@@ -567,4 +563,4 @@ SUPPORT | FREQUENCY | RULE
 20	0.002	[graph, finding, ]
 20	0.002	[random, sampling, ]
 20	0.002	[rule, algorithm, mining, ]
-Generated 566 patterns
+Generated 562 patterns

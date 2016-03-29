@@ -4,7 +4,9 @@ from operator import itemgetter
 
 debug = False	
 vocabfile = "data-assign3/vocab.txt"
-
+max_out_prefix = "max/max-"
+closed_out_prefix = "closed/closed-"
+frequent_out_prefix = "patterns/pattern-"
 
 class apriori:
 	def __init__(self, infile, outfile, min_sup):
@@ -18,6 +20,7 @@ class apriori:
 		self.pattern_list = None
 		self.closed_list = list()
 		self.max_list = list()
+
 
 	def init_vocab(self):
 		output = {}
@@ -44,7 +47,7 @@ class apriori:
 			element_support = (float)((float)(support) / (float)(self.total_count))
 		else:
 			element_support = support
-		return element_support > self.support
+		return element_support >= self.support
 
 	def process_input(self):
 		f = open(self.infile)
@@ -115,8 +118,8 @@ class apriori:
 		self.k_itemsets.append(pruned)
 		return True
 
-	def output_rules(self):
-		if self.pattern_list is None:
+	def output_rules(self, list_to_use, rule_type):
+		if list_to_use is None:
 			output = list()
 			for i in range(len(self.k_itemsets)):
 				curr_dict = self.k_itemsets[i]
@@ -125,33 +128,50 @@ class apriori:
 					output.append(item)
 			output = sorted(output, key=itemgetter(1), reverse=True)
 			self.pattern_list = output
+			list_to_use = output
 		outputstr = ''
+		if rule_type == "frequent":
+			outputstr += "====== Frequent Patterns ======\n"
+		if rule_type == "closed":
+			outputstr += "======= Closed Patterns =======\n"
+		if rule_type == "max":
+			outputstr += "========= Max Patterns ========\n"
+
 		if self.support < 1:
 			outputstr += "Minimum support = {} (approx. {:.0f})".format(self.support, self.total_count*self.support)
 		else:
 			outputstr += "Minimum support = {}".format(self.support)
 		outputstr += "\nSUPPORT | FREQUENCY | RULE\n"
-		for i in range(len(self.pattern_list)):
+		for i in range(len(list_to_use)):
 			
-			t = self.pattern_list[i]
+			t = list_to_use[i]
 			translate = None
 			if type(t[0]) is tuple:
 				translate = list(t[0])
 			frequency = float(t[1]) / float(self.total_count)
 			outputstr += "{}\t{:.3f}\t".format(t[1], frequency)
-
+			outputstr += "["
 			if translate is not None:
+
 				for candidate in translate:
 					
-					outputstr += self.vocab[candidate]  
+					outputstr += self.vocab[candidate] + ", " 
 					
 			else:
 				outputstr += self.vocab[t[0]]
-			outputstr += '\n'
-		print outputstr
-		# outf = open(self.outfile, 'w')
-		# outf.write(outputstr)
-		# outf.close()
+			outputstr += ']\n'
+		outputstr += "Generated {} patterns".format(len(list_to_use))
+		# print outputstr
+		if rule_type == "frequent":
+			outfilename = frequent_out_prefix + self.outfile + ".txt"
+		if rule_type == "closed":
+			outfilename = closed_out_prefix + self.outfile + ".txt"
+		if rule_type == "max":
+			outfilename = max_out_prefix + self.outfile + ".txt"
+		
+		outf = open(outfilename, 'w')
+		outf.write(outputstr)
+		outf.close()
 
 		# print outputstr
 
@@ -184,10 +204,33 @@ class apriori:
 					add_to_closed = False
 			if add_to_closed == True:
 				self.closed_list.append(current)
-		self.output_rules(self.closed_list)
+		self.output_rules(self.closed_list, "closed")
 
-			
-
+	def max_mining(self):			
+		for i in range(len(self.pattern_list)):
+			add_to_max = True
+			current = self.pattern_list[i]
+			sub = current[0]
+			if type(sub) is int:
+				l = list()
+				l.append(sub)
+				sub = set(l)
+			else:
+				sub = set(sub)
+			for j in range(len(self.pattern_list)):
+				candidate = self.pattern_list[j]
+				sup = candidate[0]
+				if type(sup) is int:
+					t = list()
+					t.append(sup)
+					sup = set(t)
+				else:
+					sup = set(sup)
+				if sup > sub:
+					add_to_max = False
+			if add_to_max == True:
+				self.max_list.append(current)
+		self.output_rules(self.max_list, "max")
 
 	def pattern_mining(self):
 		curr_itemset = 0
@@ -198,7 +241,7 @@ class apriori:
 			if escape == False:
 				break
 
-		self.output_rules(self.pattern_list)
+		self.output_rules(self.pattern_list, "frequent")
 		# self.closed_mining()
 
 		if debug:

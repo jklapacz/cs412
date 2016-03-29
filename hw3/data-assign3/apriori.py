@@ -1,6 +1,6 @@
 from sys import argv
 from infra import *
-usage = "python apriori.py [input filename] [output filename] [min-sup (between 0 and 1)]"
+usage = "python apriori.py [input filename] [output file suffix] [min-sup (between 0 and 1)]"
 from time import clock
 
 
@@ -12,6 +12,8 @@ def main(infile, outfile, min_sup):
 	# a.generate_itemset(0)
 	a.pattern_mining()
 	a.closed_mining()
+	a.max_mining()
+
 if __name__ == '__main__':
 	if len(argv) != 4:
 		print usage
