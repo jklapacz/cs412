@@ -1,0 +1,31 @@
+Minimum support = 0.02 (approx. 193)
+SUPPORT | FREQUENCY | RULE
+1488	0.154	learning
+1050	0.109	using
+819	0.085	model
+715	0.074	based
+582	0.060	classification
+488	0.050	feature
+474	0.049	clustering
+463	0.048	network
+376	0.039	recognition
+369	0.038	selection
+339	0.035	method
+314	0.032	algorithm
+309	0.032	machine
+299	0.031	text
+299	0.031	approach
+295	0.030	analysis
+284	0.029	bayesian
+280	0.029	classifier
+265	0.027	multi
+255	0.026	image
+243	0.025	decision
+240	0.025	kernel
+228	0.024	tree
+225	0.023	vector
+222	0.023	hierarchical
+217	0.022	support
+208	0.022	data
+204	0.021	probabilistic
+200	0.021	via
