@@ -1,0 +1,9 @@
+{
+    "path" : "~/cs/cs412/hw1/data",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+0	Albany	New York	clothes	1	cheap
+1	Springfield	Illinois	sports	2	moderate
+2	Albany	New York	sports	3	moderate
+3	Albany	New York	sports	2	cheap
+4	Joliet	Illinois	food	1	moderate
+5	Buffalo	New York	sports	1	moderate
+6	Aurora	Illinois	clothes	3	moderate
+7	Rochester	New York	sports	3	expensive
+8	Elgin	Illinois	sports	1	cheap
+9	Albany	New York	food	2	cheap
+10	New York	New York	sports	1	cheap
+11	Albany	New York	sports	3	cheap
+12	Rochester	New York	food	1	cheap
+13	Syracuse	New York	food	2	moderate
+14	Albany	New York	clothes	3	cheap
+15	Syracuse	New York	sports	2	cheap
+16	Naperville	Illinois	clothes	1	expensive
+17	Albany	New York	food	1	expensive
+18	Albany	New York	clothes	3	moderate
+19	Chicago	Illinois	sports	2	cheap
+20	Chicago	Illinois	sports	2	moderate
+21	New York	New York	food	2	expensive
+22	Naperville	Illinois	sports	2	cheap
+23	Aurora	Illinois	clothes	1	cheap
+24	Yonkers	New York	sports	2	cheap
+25	New York	New York	food	2	moderate
+26	Naperville	Illinois	sports	2	moderate
+27	Albany	New York	sports	3	cheap
+28	Yonkers	New York	sports	3	expensive
+29	Rochester	New York	sports	2	expensive
+30	Elgin	Illinois	clothes	2	expensive
+31	Chicago	Illinois	food	3	expensive
+32	Yonkers	New York	food	2	expensive
+33	Albany	New York	food	2	moderate
+34	Albany	New York	sports	3	expensive
+35	Rockford	Illinois	food	3	expensive
+36	Syracuse	New York	clothes	1	moderate
+37	Rochester	New York	sports	1	expensive
+38	Buffalo	New York	sports	1	moderate
+39	Springfield	Illinois	sports	3	cheap
+40	Rockford	Illinois	sports	2	cheap
+41	Syracuse	New York	sports	3	expensive
+42	Albany	New York	clothes	2	expensive
+43	Elgin	Illinois	food	2	expensive
+44	Rockford	Illinois	sports	2	expensive
+45	Chicago	Illinois	food	3	moderate
+46	Rochester	New York	sports	1	moderate
+47	Springfield	Illinois	clothes	1	moderate
+48	Yonkers	New York	food	3	moderate
+49	Elgin	Illinois	sports	1	moderate
