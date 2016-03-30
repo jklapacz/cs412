@@ -2,6 +2,8 @@ from collections import defaultdict
 from copy import copy
 from operator import itemgetter
 
+__author__ = "Jakub Klapacz <jklapac2@illinois.edu>"
+
 debug = False	
 vocabfile = "data-assign3/vocab.txt"
 max_out_prefix = "max/max-"

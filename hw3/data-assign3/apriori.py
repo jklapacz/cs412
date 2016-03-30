@@ -3,6 +3,7 @@ from infra import *
 usage = "python apriori.py [input filename] [output file suffix] [min-sup (between 0 and 1)]"
 from time import clock
 
+__author__ = "Jakub Klapacz <jklapac2@illinois.edu>"
 
 
 
