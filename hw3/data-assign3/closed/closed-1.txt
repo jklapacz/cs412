@@ -1,4 +1,4 @@
-====== Frequent Patterns ======
+======= Closed Patterns =======
 Minimum support = 20.0
 SUPPORT | FREQUENCY | RULE
 1488	0.154	[learning]

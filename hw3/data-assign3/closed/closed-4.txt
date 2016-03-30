@@ -1,4 +1,4 @@
-====== Frequent Patterns ======
+======= Closed Patterns =======
 Minimum support = 20.0
 SUPPORT | FREQUENCY | RULE
 1713	0.174	[query]
@@ -446,8 +446,6 @@ SUPPORT | FREQUENCY | RULE
 23	0.002	[compressed]
 23	0.002	[read]
 23	0.002	[medium]
-23	0.002	[publish]
-23	0.002	[subscribe]
 23	0.002	[based, xml, ]
 23	0.002	[system, stream, ]
 23	0.002	[xpath, query, ]
@@ -476,8 +474,6 @@ SUPPORT | FREQUENCY | RULE
 22	0.002	[power]
 22	0.002	[middleware]
 22	0.002	[granularity]
-22	0.002	[monte]
-22	0.002	[carlo]
 22	0.002	[list]
 22	0.002	[multiversion]
 22	0.002	[depth]
@@ -521,7 +517,6 @@ SUPPORT | FREQUENCY | RULE
 21	0.002	[database, storage, ]
 21	0.002	[approach, processing, ]
 21	0.002	[optimization, system, ]
-21	0.002	[concurrency, distributed, ]
 21	0.002	[evaluation, algorithm, ]
 21	0.002	[aggregate, data, ]
 21	0.002	[object, relational, ]
@@ -570,4 +565,4 @@ SUPPORT | FREQUENCY | RULE
 20	0.002	[evaluation, data, ]
 20	0.002	[transaction, management, ]
 20	0.002	[database, system, concurrency, ]
-Generated 569 patterns
+Generated 564 patterns

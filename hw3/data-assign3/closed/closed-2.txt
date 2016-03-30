@@ -1,4 +1,4 @@
-====== Frequent Patterns ======
+======= Closed Patterns =======
 Minimum support = 20.0
 SUPPORT | FREQUENCY | RULE
 1226	0.123	[web]
@@ -452,7 +452,6 @@ SUPPORT | FREQUENCY | RULE
 23	0.002	[semantic, model, ]
 23	0.002	[semantic, indexing, ]
 23	0.002	[information, access, ]
-23	0.002	[natural, interface, ]
 23	0.002	[language, interface, natural, ]
 22	0.002	[systematic]
 22	0.002	[judgment]
@@ -494,7 +493,6 @@ SUPPORT | FREQUENCY | RULE
 21	0.002	[source, information, ]
 21	0.002	[system, understanding, ]
 21	0.002	[evaluation, system, ]
-21	0.002	[web, composition, ]
 21	0.002	[based, extraction, ]
 21	0.002	[based, natural, ]
 21	0.002	[web, link, ]
@@ -539,4 +537,4 @@ SUPPORT | FREQUENCY | RULE
 20	0.002	[language, document, ]
 20	0.002	[feedback, retrieval, relevance, ]
 20	0.002	[system, multi, agent, ]
-Generated 538 patterns
+Generated 536 patterns

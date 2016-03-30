@@ -1,4 +1,4 @@
-====== Frequent Patterns ======
+======= Closed Patterns =======
 Minimum support = 20.0
 SUPPORT | FREQUENCY | RULE
 1074	0.106	[database]
