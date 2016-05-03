@@ -163,8 +163,7 @@ class apriori:
 				outputstr += self.vocab[t[0]]
 			outputstr += ']\n'
 		outputstr += "Generated {} patterns".format(len(list_to_use))
-		print outputstr
-		return
+		# print outputstr
 		if rule_type == "frequent":
 			outfilename = frequent_out_prefix + self.outfile + ".txt"
 		if rule_type == "closed":
